@@ -30,9 +30,13 @@ header ul li{
     position: relative;
 }
 
+.logo {
+    width: 350px;
+}
+
 /*header atas kanan*/
 header ul .kanan{
-    padding-left: 15cm;
+    padding-left: 15.7cm;
 }
 
 header a{
@@ -51,6 +55,16 @@ header a:hover{
     background-size: cover;
     position: relative;
 }
+
+.header-sejarah{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(34, 0, 53);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
 body {
     font-family: montserrat;
 }
@@ -93,7 +107,7 @@ nav img{
 /* tata letak navigasi*/
 
     
- /*garis dibawah navigasi*/
+/*garis dibawah navigasi*/
 }
 .navigation ul li::after{
     content: '';
@@ -134,6 +148,29 @@ nav img{
     color: white;
 }
 
+/* buat sejarah */
+
+.text-box-sejarah {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    
+}
+.text-box-sejarah h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.text-box-sejarah .isi{
+    padding: 10px;
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
 /* buat berubah warna*/
 .button-for-visit{
     display: inline-block;
@@ -145,11 +182,11 @@ nav img{
     background: transparent;
     position: relative;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 .button-for-visit:hover{
     border: 1px solid purple;
     background: purple;
-    transition: 0.5s;
 }
 /* buat berubah warna*/
 nav .fa{
@@ -166,9 +203,20 @@ footer p{
 }
 
 @media(max-width: 850px){
+
+    .logo {
+        width: 250px;
+        padding-top: 5px;
+    }
     .text-box h1{
         font-size: 30px;
     }
+
+    .text-box .quotes{
+        font-size: 10px;
+
+    }
+
     .text-box p{
         margin: 10px 0 40px;
         font-size: 11px;
@@ -179,14 +227,16 @@ footer p{
     }
     .navigation{
         position: absolute;
-        background-color: rgba(113, 1, 147);
+        background-color: rgba(84, 2, 111, 0.386); /* Warna latar belakang dengan transparansi */
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
         height: 100vh;
-        width: 200px;
+        width: 250px;
         top:0;
-        right:-200px;
+        right:-250px;
         text-align: left;
         z-index: 2;
-        transition: 1s;
+        transition: 1s ease;
     }
     nav .fa{
         display: block;
@@ -217,7 +267,52 @@ footer p{
         display: block;
         position:relative;
     }
+    /* buat berubah warna*/
+    .button-for-visit{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 12px 34px;
+        font-size: 10px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    .button-for-visit:hover{
+        border: 1px solid purple;
+        background: purple;
+        
+    }
+    /* buat sejarah */
     
+    .text-box-sejarah {
+        position: relative;
+        width: 80%;
+        color: #ffffff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        background-color: rgba(255, 255, 255, 0.103);
+        background-color: cover;
+        border-radius: 10px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: left;
+        
+    }
+    .text-box-sejarah h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .text-box-sejarah .isi{
+        padding: 10px;
+        margin: 10px 0 40px;
+        font-size: 14px;
+    }
+    /* buat berubah warna*/
 }
 
 
